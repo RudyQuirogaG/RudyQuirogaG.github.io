@@ -1,5 +1,9 @@
 .main {
   justify-content: space-between;
+  background-image: url('/images/bg-desktop.svg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .main-description {
@@ -35,6 +39,8 @@
 
 .main-description__link {
   margin: 0;
+  width: 145px;
+  height: 40px;
 }
 
 .footer {
