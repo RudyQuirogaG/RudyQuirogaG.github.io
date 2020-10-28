@@ -99,6 +99,7 @@ body {
 
 .footer {
   width: 90%;
+  margin: 0 auto;
   grid-area: footer;
   display: flex;
   justify-content: center;
@@ -108,7 +109,7 @@ body {
 .footer__list {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   list-style-type: none;
 }
 
