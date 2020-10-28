@@ -1,0 +1,46 @@
+.main {
+  justify-content: space-between;
+}
+
+.main-description {
+  flex-grow: 2;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-description__img {
+  width: 504px;
+  height: 370px;
+  margin: 0;
+  flex-grow: 2;
+}
+
+.main-description-container {
+  display: flex;
+  padding: 0 80px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+}
+
+.main-description__title {
+  width: 100%;
+  font-size: 2rem;
+}
+
+.main-description__content {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.main-description__link {
+  margin: 0;
+}
+
+.footer {
+  justify-content: flex-end;
+}
+
+.footer__item {
+  font-size: 2rem;
+}
