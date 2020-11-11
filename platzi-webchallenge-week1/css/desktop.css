@@ -1,6 +1,6 @@
 .main {
   justify-content: space-between;
-  background-image: url('/images/bg-desktop.svg');
+  background-image: url('../images/bg-desktop.svg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
