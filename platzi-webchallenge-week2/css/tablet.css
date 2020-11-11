@@ -1,0 +1,13 @@
+.home-review {
+  grid-template: 1fr / repeat(2, 1fr);
+  grid-template-areas:
+    'header main'
+    'header main'
+    'header footer';
+}
+
+.header-review {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 0px;
+}
