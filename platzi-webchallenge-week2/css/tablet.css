@@ -1,9 +1,9 @@
 .home-review {
-  grid-template: 1fr / repeat(2, 1fr);
+  grid-template: 1fr / repeat(3, 1fr);
   grid-template-areas:
-    'header main'
-    'header main'
-    'header footer';
+    'header main main'
+    'header main main'
+    'header footer footer';
 }
 
 .header-review {
