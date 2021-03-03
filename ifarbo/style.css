@@ -12,34 +12,26 @@ html {
   font-family: 'Roboto', sans-serif;
 }
 
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 .header {
   display: flex;
   flex-wrap: wrap;
 }
-
-.container {
-  max-width: 90%;
-  margin: 0 auto;
-  border: 1px solid magenta;
-}
-
 .nav {
   width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .nav__list {
   display: flex;
-  align-items: center;
+  justify-content: space-around;
 }
 
 .nav__item {
   list-style-type: none;
-}
-
-.nav__item + .nav__item {
-  margin: 0.5rem;
 }
 
 .nav__link {
