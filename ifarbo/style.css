@@ -24,7 +24,7 @@ html {
 }
 
 .header__logo {
-  flex-grow: 2;
+  flex-grow: 5;
 }
 
 .header__nav {
@@ -45,4 +45,57 @@ html {
   font-size: 1.5rem;
   color: #393a3a;
   font-weight: 700;
+}
+
+.main-content {
+  margin-top: 80px;
+  margin-bottom: 150px;
+  display: grid;
+  grid-template-columns: repeat(2, 557px);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.main-content__news {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.main-content__products {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.main-content__title-products {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.main-content__title-news {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__fundation {
+  margin-bottom: 135px;
+  font-size: 1.5rem;
+  color: #00903b;
+}
+
+.about__us {
+  padding: 54px 800px 54px 160px;
+  font-size: 1.4rem;
+  color: white;
+  background-color: #009045;
 }
