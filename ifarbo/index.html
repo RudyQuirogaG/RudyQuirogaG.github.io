@@ -1,55 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <title>IFARBO</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>IFARBO LTDA</title>
+    <script src="https://kit.fontawesome.com/fea616fcd1.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body class="grid-wrapper">
 
-    <header class="header container">
-        <div class="header__logo"><img src="./assets/img/logo.svg" alt="IFARBO logo"></div>
+    <header class="header">
         <nav class="header__nav">
+            <picture>
+                <source srcset="/assets/img/logo@0.5x.png" media="(max-width: 600px)">
+                <img class="header__img" src="/assets/img/logo@0.5x.png" alt="logo">
+            </picture>
             <ul class="header__list">
                 <li class="header__item"><a class="header__link" href="#">Productos</a></li>
                 <li class="header__item"><a class="header__link" href="#">Actualidad</a></li>
                 <li class="header__item"><a class="header__link" href="#">Contacto</a></li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
 
-    <main>
+    <main class="main">
 
-        <section class="hero">
-            <div class="hero__img">
-                <img src="./assets/img/hero.jpg" alt="">
+        <section class="container">
+            <div class="carousel">
+                <div class="slider">
+                    <picture>
+                        <source srcset="/assets/img/header-small.png" media="(max-width: 320px)">
+                        <source srcset="/assets/img/header-medium.png" media="(max-width: 425px)">
+                        <source srcset="/assets/img/header-tablet.png" media="(max-width: 768px)">
+                        <img src="/assets/img/header-desktop.png" alt="">
+                        <!-- <div class="carousel__title">
+                            <h2>Protegiendo su salud</h2>
+                        </div> -->
+                    </picture>
+
+                    <picture>
+                        <source srcset="/assets/img/ifarborange-small.png" media="(max-width: 320px)">
+                        <source srcset="/assets/img/ifarborange-medium.png" media="(max-width: 425px)">
+                        <source srcset="/assets/img/ifarborange-tablet.png" media="(max-width: 768px)">
+                        <img class="caoursel__img" src="/assets/img/ifarborange-desktop.png" alt="">
+                        <!-- <div class="carousel__title">
+                            <h2>Protegiendo su salud</h2>
+                        </div> -->
+                    </picture>
+
+                    <picture>
+                        <source srcset="/assets/img/header-small.png" media="(max-width: 320px)">
+                        <source srcset="/assets/img/header-medium.png" media="(max-width: 425px)">
+                        <source srcset="/assets/img/header-tablet.png" media="(max-width: 768px)">
+                        <img class="caoursel__img" src="/assets/img/header-desktop.png" alt="">
+                        <!-- <div class="carousel__title">
+                            <h2>Protegiendo su salud</h2>
+                        </div> -->
+                    </picture>
+                </div>
+                <div class="control">
+                    <span class="arrow right"><i class="fas fa-chevron-circle-right"></i></span>
+                    <span class="arrow left"><i class="fas fa-chevron-circle-left"></i></span>
+                    <ul>
+                        <li class="selected"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section class="main-content container">
+        <section class="main-content">
             <h2 class="main-content__title-products">Nuestros productos</h2>
-            <img class="main-content__products" src="./assets/img/products.svg" alt="Produtos">
+            <a href="#"><span class="main-content__products"></span></a>
             <h2 class="main-content__title-news">Actualidad</h2>
-            <img class="main-content__news" src="./assets/img/news.svg" alt="Actualidad">
+            <a href="#"><span class="main-content__news"></span></a>
         </section>
 
-        <section class="about">
-            <p class="about__fundation container">Industria farmacéutica Boliviana "IFARBO" fue fundada el 24 de Marzo
-                de 1977.
-            </p>
-            <p class="about__us">Nuestra planta industrial se encuentra ubicada en la ciudad de Cochabamba, contamos con
-                agencias de
+        <section class=video>
+            <p class="video__title">Industria farmacéutica Boliviana “IFARBO” fue fundada el 24 de marzo de 1977.</p>
+            <video class="video__main" controls src="./assets/img/corporativo.mp4"></video>
+            <p class="video__content">Nuestra planta industrial se encuentra ubicada en la ciudad de Cochabamba,
+                contamos con agencias de
                 distribución en La Paz Santa Cruz y Tarija.</p>
         </section>
+
+        <section class="certification">
+            <h2 class="certification__title">Certificaciones</h2>
+            <p>Buenas Prácticas de Almacenamiento</p>
+            <p>Buenas Prácticas de Manufactura</p>
+            <p>Buenas Prácticas de Farmacovigilancia</p>
+            <p>Protocolo de Bioseguridad Verificado</p>
+        </section>
+
+        <section id="product">
+            <h3 class="product__title">Productos destacados</h3>
+            <div class="product">
+                <div class="product-carousel">
+                    <div class="product-slider">
+                        <picture>
+                            <img class="product__img" src="https://via.placeholder.com/200" alt="">
+                        </picture>
+
+                        <picture>
+                            <img class="product__img" src="https://via.placeholder.com/200" alt="">
+                        </picture>
+
+                        <picture>
+                            <img class="product__img" src="https://via.placeholder.com/200" alt="">
+                        </picture>
+                    </div>
+                    <div class="product-control">
+                        <span class="product-arrow product-right"><i class="fas fa-chevron-circle-right"></i></span>
+                        <span class="product-arrow product-left"><i class="fas fa-chevron-circle-left"></i></span>
+                        <ul>
+                            <li class="product-selected"></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <picture>
+                <img src="./assets/img/contact-small.png" alt="Contacto ifarbo">
+            </picture>
+            <p>Siguenos en nuestras Redes Sociales</p>
+            <ul class="contact__redes">
+                <li><a href="#"><span class="contact__facebook"></span></a></li>
+                <li><a href="#"><span class="contact__instagram"></span></a></li>
+            </ul>
+        </section>
+
     </main>
 
+    <footer class="footer">
+
+        <section class="footer__left">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </section>
+        <section class="footer__center">
+            <ul>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </section>
+        <section class="right">
+            <picture>
+                <img src="./assets/img/fotter-logo-small.png" alt="Logo IFARBO LTDA">
+            </picture>
+        </section>
+
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
