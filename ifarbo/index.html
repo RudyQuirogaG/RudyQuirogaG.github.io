@@ -11,12 +11,12 @@
     <script src="https://kit.fontawesome.com/fea616fcd1.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="grid-wrapper">
+<body class="grid-container">
 
     <header class="header">
         <nav class="header__nav">
             <picture>
-                <source srcset="./assets/img/logo@0.5x.png" media="(max-width: 600px)">
+                <source srcset="/assets/img/logo@0.5x.png" media="(max-width: 600px)">
                 <img class="header__img" src="/assets/img/logo@0.5x.png" alt="logo">
             </picture>
             <ul class="header__list">
@@ -38,9 +38,9 @@
             <div class="carousel">
                 <div class="slider">
                     <picture>
-                        <source srcset="./assets/img/header-small.png" media="(max-width: 320px)">
-                        <source srcset="./assets/img/header-medium.png" media="(max-width: 425px)">
-                        <source srcset="./assets/img/header-tablet.png" media="(max-width: 768px)">
+                        <source srcset="/assets/img/header-small.png" media="(max-width: 320px)">
+                        <source srcset="/assets/img/header-medium.png" media="(max-width: 425px)">
+                        <source srcset="/assets/img/header-tablet.png" media="(max-width: 768px)">
                         <img src="/assets/img/header-desktop.png" alt="">
                         <!-- <div class="carousel__title">
                             <h2>Protegiendo su salud</h2>
@@ -48,9 +48,9 @@
                     </picture>
 
                     <picture>
-                        <source srcset="./assets/img/ifarborange-small.png" media="(max-width: 320px)">
-                        <source srcset="./assets/img/ifarborange-medium.png" media="(max-width: 425px)">
-                        <source srcset="./assets/img/ifarborange-tablet.png" media="(max-width: 768px)">
+                        <source srcset="/assets/img/ifarborange-small.png" media="(max-width: 320px)">
+                        <source srcset="/assets/img/ifarborange-medium.png" media="(max-width: 425px)">
+                        <source srcset="/assets/img/ifarborange-tablet.png" media="(max-width: 768px)">
                         <img class="caoursel__img" src="/assets/img/ifarborange-desktop.png" alt="">
                         <!-- <div class="carousel__title">
                             <h2>Protegiendo su salud</h2>
@@ -58,9 +58,9 @@
                     </picture>
 
                     <picture>
-                        <source srcset="./assets/img/header-small.png" media="(max-width: 320px)">
-                        <source srcset="./assets/img/header-medium.png" media="(max-width: 425px)">
-                        <source srcset="./assets/img/header-tablet.png" media="(max-width: 768px)">
+                        <source srcset="/assets/img/header-small.png" media="(max-width: 320px)">
+                        <source srcset="/assets/img/header-medium.png" media="(max-width: 425px)">
+                        <source srcset="/assets/img/header-tablet.png" media="(max-width: 768px)">
                         <img class="caoursel__img" src="/assets/img/header-desktop.png" alt="">
                         <!-- <div class="carousel__title">
                             <h2>Protegiendo su salud</h2>
@@ -96,13 +96,29 @@
 
         <section class="certification">
             <h2 class="certification__title">Certificaciones</h2>
-            <p>Buenas Prácticas de Almacenamiento</p>
-            <p>Buenas Prácticas de Manufactura</p>
-            <p>Buenas Prácticas de Farmacovigilancia</p>
-            <p>Protocolo de Bioseguridad Verificado</p>
+            <div class="certification__bpa-wrapper">
+                <div class="bpa"></div>
+                <span class="bpa__img"></span>
+                <p>Buenas Prácticas de Almacenamiento</p>
+            </div>
+            <div class="certification__bpm-wrapper">
+                <div class="bpm"></div>
+                <span class="bpm__img"></span>
+                <p>Buenas Prácticas de Manufactura</p>
+            </div>
+            <div class="certification__bpf-wrapper">
+                <div class="bpf"></div>
+                <span class="bpf__img"></span>
+                <p>Buenas Prácticas de Farmacovigilancia</p>
+            </div>
+            <div class="certification__pbv-wrapper">
+                <div class="pbv"></div>
+                <span class="pbv__img"></span>
+                <p>Protocolo de Bioseguridad Verificado</p>
+            </div>
         </section>
 
-        <section id="product">
+        <section id="products">
             <h3 class="product__title">Productos destacados</h3>
             <div class="product">
                 <div class="product-carousel">
