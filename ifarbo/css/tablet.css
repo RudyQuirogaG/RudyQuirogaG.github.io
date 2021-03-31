@@ -1,0 +1,174 @@
+h2 {
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+/* Section header */
+
+.header {
+  flex-wrap: nowrap;
+}
+
+.header__list {
+  position: static;
+  width: 100%;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  transition: none;
+  box-shadow: none;
+}
+
+.hamburger {
+  display: none;
+}
+
+/* Main section */
+
+.main-content {
+  width: 90%;
+  padding: 4rem 0;
+  grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+  gap: unset;
+  align-items: center;
+}
+
+.main-content__title-products {
+  align-self: flex-start;
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+}
+
+.main-content__product-link {
+  grid-column: 3 / 5;
+  grid-row: 1 / 3;
+}
+
+.main-content__title-news {
+  grid-column: 2 / 4;
+  grid-row: 2 / 4;
+}
+
+.main-content__news-link {
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}
+
+/* Section Certification */
+
+.certification {
+  gap: 2rem;
+}
+
+.certification p {
+  margin-left: 2rem;
+}
+
+.certification__bpa {
+  border-bottom: 10px solid var(--main-green);
+}
+
+@keyframes increasebpa {
+  100% {
+    width: 20%;
+  }
+}
+
+.bpa__img {
+  width: 80px;
+  height: 80px;
+}
+
+.certification__bpm {
+  border-bottom: 10px solid var(--main-green);
+}
+
+@keyframes increasesbpm {
+  100% {
+    width: 25%;
+  }
+}
+
+.bpm__img {
+  width: 80px;
+  height: 80px;
+}
+
+.certification__bpf {
+  border-bottom: 10px solid var(--main-green);
+}
+
+@keyframes increasesbpf {
+  100% {
+    width: 30%;
+  }
+}
+
+.bpf__img {
+  width: 80px;
+  height: 80px;
+}
+
+.certification__pbv {
+  border-bottom: 10px solid var(--main-green);
+}
+
+@keyframes increasespbv {
+  100% {
+    width: 35%;
+  }
+}
+
+.pbv__img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Section Products */
+
+.product {
+  width: 30%;
+}
+
+/* Section Contact */
+
+.contact {
+  gap: 3rem;
+}
+
+.contact__facebook {
+  width: 50px;
+  height: 50px;
+}
+
+.contact__instagram {
+  width: 50px;
+  height: 50px;
+}
+
+.contact__redes {
+  gap: 2rem;
+}
+
+/* Section Footer */
+
+.footer {
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.footer__left li a {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.footer__center ul {
+  gap: 2rem;
+}
+
+.footer__center li a {
+  font-size: 1.2rem;
+}
