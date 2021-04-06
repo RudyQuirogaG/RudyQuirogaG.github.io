@@ -19,76 +19,84 @@ function closeMenu() {
 
 // Slider Section
 
-const slider = document.querySelector('.slider');
-const left = document.querySelector('.left');
-const right = document.querySelector('.right');
-const indicatorParent = document.querySelector('.control ul');
-const indicators = document.querySelectorAll('.control li');
+const images = document.querySelectorAll('.carousel__img img');
+const texts = document.querySelectorAll('.carousel__content h3');
+const controls = document.querySelectorAll('.carousel__control li')
+const right = document.querySelector('.carousel__arrow--right');
+const left = document.querySelector('.carousel__arrow--left');
+const time = 8000;
 
 index = 0;
 
-indicators.forEach((indicator, i) => {
-    indicator.addEventListener('click', () => {
-        document.querySelector('.control .selected').classList.remove('selected');
-        indicator.classList.add('selected');
-        slider.style.transform = 'translateX(' + (i) * -(100 / 3) + '%)';
+setInterval(() => {
+    if (index === 0) {
+        images[index].classList.remove('carousel__img--active');
+        texts[index].classList.remove('carousel__content--active');
+        controls[index].classList.remove('carousel__control--active');
+        index++;
+        images[index].classList.add('carousel__img--active');
+        texts[index].classList.add('carousel__content--active');
+        controls[index].classList.add('carousel__control--active');
+    } else if (index === 1) {
+        images[index].classList.remove('carousel__img--active');
+        texts[index].classList.remove('carousel__content--active');
+        controls[index].classList.remove('carousel__control--active');
+        index++;
+        images[index].classList.add('carousel__img--active');
+        texts[index].classList.add('carousel__content--active');
+        controls[index].classList.add('carousel__control--active');
+    } else {
+        images[index].classList.remove('carousel__img--active');
+        texts[index].classList.remove('carousel__content--active');
+        controls[index].classList.remove('carousel__control--active');
+        index = 0;
+        images[index].classList.add('carousel__img--active');
+        texts[index].classList.add('carousel__content--active');
+        controls[index].classList.add('carousel__control--active');
+    }
+}, time)
+
+controls.forEach((element, i) => {
+    element.addEventListener('click', () => {
+        document.querySelector('.carousel__control--active').classList.remove('carousel__control--active');
+        document.querySelector('.carousel__img--active').classList.remove('carousel__img--active');
+        document.querySelector('.carousel__content--active').classList.remove('carousel__content--active');
+        element.classList.add('carousel__control--active');
         index = i;
+        images[index].classList.add('carousel__img--active');
+        texts[index].classList.add('carousel__content--active');
     });
 });
 
-left.addEventListener('click', function () {
+right.addEventListener('click', () => {
+    index = (index < images.length - 1) ? index + 1 : images.length - 1;
+    document.querySelector('.carousel__img--active').classList.remove('carousel__img--active');
+    document.querySelector('.carousel__content--active').classList.remove('carousel__content--active');
+    document.querySelector('.carousel__control--active').classList.remove('carousel__control--active');
+    images[index].classList.add('carousel__img--active');
+    texts[index].classList.add('carousel__content--active');
+    controls[index].classList.add('carousel__control--active');
+});
+
+left.addEventListener('click', () => {
     index = (index > 0) ? index - 1 : 0;
-    document.querySelector('.control .selected').classList.remove('selected');
-    indicatorParent.children[index].classList.add('selected');
-    slider.style.transform = 'translateX(' + (index) * -(100 / 3) + '%)';
-});
-
-right.addEventListener('click', function () {
-    index = (index < 3 - 1) ? index + 1 : 2;
-    document.querySelector('.control .selected').classList.remove('selected');
-    indicatorParent.children[index].classList.add('selected');
-    slider.style.transform = 'translateX(' + (index) * -(100 / 3) + '%)';
+    document.querySelector('.carousel__img--active').classList.remove('carousel__img--active');
+    document.querySelector('.carousel__content--active').classList.remove('carousel__content--active');
+    document.querySelector('.carousel__control--active').classList.remove('carousel__control--active');
+    images[index].classList.add('carousel__img--active');
+    texts[index].classList.add('carousel__content--active');
+    controls[index].classList.add('carousel__control--active');
 });
 
 
-// Product Slider
-
-const productSlider = document.querySelector('.product-slider');
-const productLeft = document.querySelector('.product-left');
-const productRight = document.querySelector('.product-right');
-const productIndicatorParent = document.querySelector('.product-control ul');
-const productIndicators = document.querySelectorAll('.product-control li');
-productIndex = 0;
-
-productIndicators.forEach((productIndicator, i) => {
-    productIndicator.addEventListener('click', () => {
-        document.querySelector('.product-control .product-selected').classList.remove('product-selected');
-        productIndicator.classList.add('product-selected');
-        productSlider.style.transform = 'translateX(' + (i) * -(100 / 3) + '%)';
-        productIndex = i;
-    });
-});
-
-productLeft.addEventListener('click', function () {
-    productIndex = (productIndex > 0) ? productIndex - 1 : 0;
-    document.querySelector('.product-control .product-selected').classList.remove('product-selected');
-    productIndicatorParent.children[productIndex].classList.add('product-selected');
-    productSlider.style.transform = 'translateX(' + (productIndex) * -(100 / 3) + '%)';
-});
-
-productRight.addEventListener('click', function () {
-    productIndex = (productIndex < 3 - 1) ? productIndex + 1 : 2;
-    document.querySelector('.product-control .product-selected').classList.remove('product-selected');
-    productIndicatorParent.children[productIndex].classList.add('product-selected');
-    productSlider.style.transform = 'translateX(' + (productIndex) * -(100 / 3) + '%)';
-});
-
-// Section certification
+// Section certification and video
 
 const bpa = document.querySelector('.bpa');
 const bpm = document.querySelector('.bpm');
 const bpf = document.querySelector('.bpf');
 const pbv = document.querySelector('.pbv');
+const video = document.querySelector('.video__main');
+
 const options = {
     root: null,
     rootMargin: '0px',

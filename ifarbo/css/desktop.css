@@ -13,13 +13,67 @@ a {
 /* Header section */
 
 .header__link {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 
 .header__img {
   max-width: 300px;
   object-fit: cover;
+}
+
+/* Carousel section */
+
+.carousel {
+  grid-template: repeat(3, 1fr) / repeat(12, 1fr);
+}
+
+.carousel__img {
+  grid-column: 1 / 13;
+  grid-row: 1 / 4;
+}
+
+.carousel__content {
+  align-self: center;
+  width: 100%;
+  grid-column: 2 / 7;
+  grid-row: 2 / 3;
+}
+
+.carousel__content h3 {
+  background-color: var(--green-trn);
+  border-radius: 5px;
+  align-items: center;
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel__arrow {
+  font-size: 1.8rem;
+}
+
+.carousel__arrow--right {
+  padding-right: 1rem;
+  grid-column: 12 / 13;
+  grid-row: 1 / 4;
+  justify-self: end;
+  align-self: center;
+}
+
+.carousel__control {
+  grid-column: 1 / 13;
 }
 
 /* Main section */

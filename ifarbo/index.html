@@ -22,9 +22,9 @@
                 <img class="header__img" src="./assets/img/ifarbo-logo-desktop.png" alt="logo">
             </picture>
             <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="#">Productos</a></li>
-                <li class="header__item"><a class="header__link" href="#">Actualidad</a></li>
-                <li class="header__item"><a class="header__link" href="#">Contacto</a></li>
+                <li class="header__item"><a class="header__link" href="./pages/products.html">Productos</a></li>
+                <li class="header__item"><a class="header__link" href="./pages/news.html">Actualidad</a></li>
+                <li class="header__item"><a class="header__link" href="./pages/contact.html">Contacto</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -36,44 +36,50 @@
 
     <main class="main">
 
-        <section class="container">
-            <div class="carousel">
-                <div class="slider">
-                    <picture>
-                        <source srcset="./assets/img/ifarbo-small.png" media="(max-width: 320px)">
-                        <source srcset="./assets/img/ifarbo-tablet.png" media="(max-width: 768px)">
-                        <img src="./assets/img/ifarbo-desktop.png" alt="Industria farmacéutica Boliviana">
-                    </picture>
-
-                    <picture>
-                        <source srcset="./assets/img/ifarborange-small.png" media="(max-width: 320px)">
-                        <source srcset="./assets/img/ifarborange-tablet.png" media="(max-width: 768px)">
-                        <img src="./assets/img/ifarborange-desktop.png" alt="">
-                    </picture>
-
-                    <picture>
-                        <source srcset="./assets/img/header-small.png" media="(max-width: 320px)">
-                        <source srcset="./assets/img/header-tablet.png" media="(max-width: 768px)">
-                        <img src="./assets/img/header-desktop.png" alt="">
-                    </picture>
-                </div>
-                <div class="control">
-                    <span class="arrow right"><i class="fas fa-chevron-circle-right"></i></span>
-                    <span class="arrow left"><i class="fas fa-chevron-circle-left"></i></span>
-                    <ul>
-                        <li class="selected"></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
+        <section class="carousel">
+            <div class="carousel__img">
+                <picture>
+                    <source srcset="./assets/img/ifarborange-small.png" media="(max-width: 320px)">
+                    <source srcset="./assets/img/ifarborange-tablet.png" media="(max-width: 768px)">
+                    <img class="carousel__img--active" src="./assets/img/ifarborange-desktop.png"
+                        alt="Producto ifarborange">
+                </picture>
+                <picture>
+                    <source srcset="./assets/img/actualidad-small.png" media="(max-width: 320px)">
+                    <source srcset="./assets/img/actualidad-tablet.png" media="(max-width: 768px)">
+                    <img src="./assets/img/actualidad-desktop.png" alt="Producto ifarborange">
+                </picture>
+                <picture>
+                    <source srcset="./assets/img/ifarbo-small.png" media="(max-width: 320px)">
+                    <source srcset="./assets/img/ifarbo-tablet.png" media="(max-width: 768px)">
+                    <img src="./assets/img/ifarbo-desktop.png" alt="Producto ifarborange">
+                </picture>
             </div>
+            <div class="carousel__content">
+                <h3 class="carousel__content--active">Familias fuertes y sanas con IFARBORANGE.</h3>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, necessitatibus.</h3>
+                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, voluptates magni! Reiciendis?</h3>
+            </div>
+            <span class="carousel__arrow carousel__arrow--right"><i class="fas fa-chevron-circle-right"></i></span>
+            <span class="carousel__arrow carousel__arrow--left"><i class="fas fa-chevron-circle-left"></i></span>
+            <ul class="carousel__control">
+                <li class="carousel__control--active"></li>
+                <li></li>
+                <li></li>
+            </ul>
         </section>
 
-        <section class="main-content">
-            <h2 class="main-content__title-products">Nuestros productos</h2>
-            <a class="main-content__product-link" href="#"><span class="main-content__products"></span></a>
-            <h2 class="main-content__title-news">Actualidad</h2>
-            <a class="main-content__news-link" href="#"><span class="main-content__news"></span></a>
+        <section class="content">
+            <a class="content__title content__title--products" href="./pages/products.html">Nuestros productos</a>
+            <a class="content__products" href="./pages/products.html"><img class="content__img--products"
+                    src="./assets/img/products.svg" alt="Enlace a nuestros productos"></a>
+            <a class="content__title content__title--news" href="./pages/news.html">Actualidad</a>
+            <a class="content__news" href="./pages/news.html"><img class="content__img--news"
+                    src="./assets/img/news.svg" alt="Enlaces a nuestas noticias"></a>
+            <img class="content__elipse content__elipse--left" src="./assets/img/elipse-left.svg"
+                alt="Elipse izquierda">
+            <img class="content__elipse content__elipse--right" src="./assets/img/elipse-right.svg"
+                alt="Elipse derecha">
         </section>
 
         <section class=video>
@@ -108,34 +114,45 @@
             </div>
         </section>
 
-        <section id="products">
-            <h3 class="product__title">Productos destacados</h3>
-            <div class="product">
-                <div class="product-carousel">
-                    <div class="product-slider">
-                        <picture>
-                            <img class="product__img" src="https://via.placeholder.com/200" alt="">
-                        </picture>
-
-                        <picture>
-                            <img class="product__img" src="https://via.placeholder.com/200" alt="">
-                        </picture>
-
-                        <picture>
-                            <img class="product__img" src="https://via.placeholder.com/200" alt="">
-                        </picture>
-                    </div>
-                    <div class="product-control">
-                        <span class="product-arrow product-right"><i class="fas fa-chevron-circle-right"></i></span>
-                        <span class="product-arrow product-left"><i class="fas fa-chevron-circle-left"></i></span>
-                        <ul>
-                            <li class="product-selected"></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
+        <section class="products">
+            <h3 class="products__title">Productos destacados</h3>
+            <div class="products__img">
+                <picture>
+                    <source srcset="./assets/img/product-gelvivian-small.png" media="(max-width: 320px)">
+                    <img class="products__img--active" src="./assets/img/product-gelvivian.png"
+                        alt="Producto Gel Vivian">
+                </picture>
+                <picture>
+                    <source srcset="./assets/img/product-clorexin-small.png" media="(max-width: 320px)">
+                    <img src="./assets/img/product-clorexin.png" alt="Producto Clorexin">
+                </picture>
+                <picture>
+                    <source srcset="./assets/img/product-glicohol-small.png" media="(max-width: 320px)">
+                    <img src="./assets/img/product-glicohol.png" alt="Producto Agua Glicohol">
+                </picture>
+                <picture>
+                    <source srcset="./assets/img/product-gripalgin-small.png" media="(max-width: 320px)">
+                    <img src="./assets/img/product-gripalgin.png" alt="Producto Alcohol Gripalgin">
+                </picture>
+                <picture>
+                    <source srcset="./assets/img/product-calmatos-small.png" media="(max-width: 320px)">
+                    <img src="./assets/img/product-calmatos.png" alt="Producto Calmatos">
+                </picture>
+                <picture>
+                    <source srcset="./assets/img/product-neurocerebrin-small.png" media="(max-width: 320px)">
+                    <img src="./assets/img/product-neurocerebrin.png" alt="Producto Neurocerebrin">
+                </picture>
+                <picture>
+                    <source srcset="./assets/img/product-ifarborange-small.png" media="(max-width: 320px)">
+                    <img src="./assets/img/product-ifarborange.png" alt="Producto Ifarborange">
+                </picture>
+                <picture>
+                    <source srcset="./assets/img/product-nutriton-small.png" media="(max-width: 320px)">
+                    <img src="./assets/img/product-nutriton.png" alt="Producto Alcohol Gripalgin">
+                </picture>
             </div>
+            <span class="products__arrow products__arrow--left"><i class="fas fa-chevron-circle-left"></i></span>
+            <span class="products__arrow products__arrow--right"><i class="fas fa-chevron-circle-right"></i></span>
         </section>
 
         <section class="contact">
@@ -146,8 +163,9 @@
             </picture>
             <p>Siguenos en nuestras Redes Sociales</p>
             <ul class="contact__redes">
-                <li><a href="#"><span class="contact__facebook"></span></a></li>
-                <li><a href="#"><span class="contact__instagram"></span></a></li>
+                <li><a href="https://www.facebook.com/ifarboltda.central"><span class="contact__facebook"></span></a>
+                </li>
+                <li><a href="https://www.instagram.com/ifarbo.bol/"><span class="contact__instagram"></span></a></li>
             </ul>
         </section>
 
@@ -157,14 +175,14 @@
 
         <section class="footer__left">
             <ul>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/ifarboltda.central"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/ifarbo.bol/"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </section>
         <section class="footer__center">
             <ul>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="./pages/products.html">Productos</a></li>
+                <li><a href="./pages/contact.html">Contacto</a></li>
             </ul>
         </section>
         <section class="right">
