@@ -6,6 +6,7 @@
   --orange: #fa7e03;
   --yellow: #fdb52d;
   --blue: #184e77;
+  --gray-trn: rgba(145, 149, 142, 0.8);
   --green-trn: rgba(181, 228, 140, 0.6);
   --green-025: #d9ed92;
   --green-050: #b5e48c;
@@ -29,6 +30,10 @@ body {
 
 h2 {
   font-size: 1.2rem;
+}
+
+h3 {
+  font-size: 1.1rem;
 }
 
 h4 {
@@ -176,14 +181,14 @@ a {
 .carousel__content h3 {
   padding: 1rem 1rem 1.5rem;
   text-align: center;
-  color: var(--blue);
-  background-color: var(--green-050);
+  color: var(--white);
+  background-color: var(--gray-trn);
   width: 100%;
   display: none;
 }
 
 .carousel__arrow {
-  color: var(--blue);
+  color: var(--white);
   font-size: 1.2rem;
   cursor: pointer;
 }
@@ -215,11 +220,11 @@ a {
 }
 
 .carousel__control li {
-  width: 10px;
-  height: 10px;
-  border: 2px solid var(--blue);
+  width: 8px;
+  height: 8px;
+  border: 1px solid var(--white);
   border-radius: 50px;
-  background: var(--blue);
+  background: var(--white);
   cursor: pointer;
   list-style: none;
 }
@@ -457,7 +462,7 @@ a {
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem 0;
-  background: var(--orange);
+  background: var(--green-025);
   display: grid;
   grid-template: auto 1fr / repeat(6, 1fr);
   grid-auto-rows: minmax(50px, auto);
@@ -574,8 +579,8 @@ a {
 }
 
 .products-hero h2 {
-  background-color: var(--green-trn);
-  color: var(--blue);
+  background-color: var(--gray-trn);
+  color: var(--white);
   text-align: center;
   padding: 1.5rem;
 }
@@ -604,8 +609,8 @@ a {
 }
 
 .news-hero h2 {
-  background-color: var(--green-trn);
-  color: var(--blue);
+  background-color: var(--gray-trn);
+  color: var(--white);
   text-align: center;
   padding: 1.5rem;
 }
@@ -732,8 +737,8 @@ a {
 }
 
 .contact-hero h2 {
-  background-color: var(--green-trn);
-  color: var(--blue);
+  background-color: var(--gray-trn);
+  color: var(--white);
   text-align: center;
   padding: 1.5rem;
 }
