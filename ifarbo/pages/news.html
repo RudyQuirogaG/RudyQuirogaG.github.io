@@ -1,15 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noticias</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/tablet.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="../css/desktop.css" media="(min-width: 1024px)">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>IFARBO LTDA | Noticias</title>
+    <script src="https://kit.fontawesome.com/fea616fcd1.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <h1>Page Noticias</h1>
+<body class="grid-container">
+    <header class="header">
+        <nav class="header__nav">
+            <picture>
+                <source srcset="../assets/img/ifarbo-logo-small.png" media="(max-width: 320px)">
+                <img class="header__img" src="../assets/img/ifarbo-logo-desktop.png" alt="logo">
+            </picture>
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="../pages/products.html">Productos</a></li>
+                <li class="header__item"><a class="header__link" href="../pages/news.html">Actualidad</a></li>
+                <li class="header__item"><a class="header__link" href="../pages/contact.html">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="news-hero">
+            <div class="news__picture">
+                <picture>
+                    <source srcset="../assets/img/news-ifarbo-small.png" media="(max-width: 320px)">
+                    <source srcset="../assets/img/news-ifarbo-tablet.png" media="(max-width: 768px)">
+                    <img src="../assets/img/news-ifarbo.png" alt="Productos IFARBO">
+                </picture>
+            </div>
+            <h2>Actualidad</h2>
+        </section>
+
+        <section class="blog">
+            <img class="blog__line blog__line--left" src="../assets/img/blog-left.svg" alt="Linea amarrilla">
+            <div class="blog-card blog-card__clases">
+                <h3 class="blog__title blog__title--clases">IFARBORANGE quiere que tus hijos saquen provecho a sus
+                    clases virtuales, por eso
+                    te damos 9 importantes consejos para que los puedas ayudar.</h3>
+                <img src="../assets/img/blog-clases.png" alt="Clases con IFARBORANGE">
+                <ol>
+                    <li>Programa un horario (y haz que se cumpla). Elabora un cronograma para que los chicos estudien y
+                        hagan las tareas asignadas, otorgándoles también un recreo.</li>
+                    <li>Crea un espacio confortable, iluminado y agradable para trabajar. Un área de la casa ventilada y
+                        con luz natural, donde no haya demasiado ruido ni distracciones. </li>
+                    <li>Sigue la rutina normal. Asegúrate que los niños sigan los mismos horarios cotidianos que cuando
+                        tenían clases presenciales como la hora de levantarse, por ejemplo.</li>
+                    <li>Toma el control. Impón las reglas y asegúrate que se cumplan. No dejes que el niño haga lo que
+                        quiera ni lo amenaces con cosas que luego no cumplirás.</li>
+                    <li>Programa un tiempo para esparcimiento. Asegúrate que los chicos realicen en algún momento del
+                        día actividades físicas.</li>
+                    <li>Asegúrate que se hidraten y coman bien. Proporcionales comidas nutritivas y balanceadas, evita
+                        el exceso de dulces y postres.</li>
+                    <li>Enséñales la forma correcta de sentarse. Es importante que aprendan a sentarse bien para evitar
+                        problemas de espalda en un futuro.</li>
+                    <li>Revisa que la señal de internet sea buena. El lugar designado para su clase debe tener buena
+                        recepción del internet, muchos equipos conectados podrían bajar la velocidad.</li>
+                    <li>Prohíbe bebidas a lado del computador. Son niños y es normal que tengan accidentes, que puedan
+                        dañar el equipo y su integridad física por eso es mejor alejar los líquidos de sus equipos
+                        electrónicos.</li>
+                </ol>
+                <p>IFARBORANGE fortalece las defensas y disminuye el riesgo de infecciones respiratorias, gracias a la
+                    Vitamina A, D y C con OMEGA 3 que contiene.</p>
+                <p>Familias fuertes y sanas con IFARBORANGE.</p>
+            </div>
+            <div class="blog-card blog-card__alcohol">
+                <h3 class="blog__title blog__title--alcohol">Un error común al usar alcohol de 96% es creer que, por ser
+                    más concentrado,
+                    actuará mejor frente a virus y bacterias</h3>
+                <img src="../assets/img/blog-valor.png" alt="Glicohol">
+                <p>El alcohol al 70% es más efectivo, esto sucede porque los alcoholes tienen la propiedad que mediante
+                    el agua logran una mayor penetrabilidad mejorando la penetración en el protoplasma bacteriano además
+                    de tener acción fungicida y virucida.</p>
+                <p>Concentraciones superiores al 70% como al 96% son menos eficaces para bacterias porque la penetración
+                    es defectuosa debido a la baja presencia de agua. Este último “es un alcohol más puro, por lo tanto,
+                    se evapora rápidamente permaneciendo menos tiempo en la zona de aplicación”.</p>
+                <p>¿Es mejor usar Alcohol líquido o Alcohol Gel?
+                    Para la higiene de manos podemos utilizar Alcohol líquido (Alcohol medicinal o Alcohol simple
+                    líquido) o Gel Hidroalcohólico.</p>
+                <p>Usar Alcohol líquido constantemente puede resecar las manos. “sufrirán el efecto deshidratante que
+                    provoca el alcohol”. Ese problema “se verá minimizado si utilizamos un gel, loción o solución
+                    hidroalcohólica con agentes emolientes, puesto que este tipo de formulaciones incorporan sustancias
+                    que reducen la deshidratación.</p>
+                <p>El alcohol gel, evita la evaporación rápida, mantiene el alcohol al 70% mayor tiempo en las manos,
+                    facilitando así la desinfección de la totalidad de las manos.</p>
+                <p>IFARBO produce sanitizantes garantizados con certificación BPM (Buenas Prácticas de Manufactura) te
+                    sugerimos usar:</p>
+                <p>GLICOHOL (Alcohol al 70% con Glicerina y Aloe Vera)
+                    Sanitizante que protege, humecta y suaviza tus manos.</p>
+            </div>
+            <img class="blog__line blog__line--right" src="../assets/img/blog-left.svg" alt="Linea amarrilla">
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__left">
+            <ul>
+                <li><a href="https://www.facebook.com/ifarboltda.central"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/ifarbo.bol/"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </section>
+        <section class="footer__center">
+            <ul>
+                <li><a href="../pages/products.html">Productos</a></li>
+                <li><a href="../pages/contact.html">Contacto</a></li>
+            </ul>
+        </section>
+        <section class="right">
+            <picture>
+                <img src="../assets/img/fotter-logo-small.png" alt="Logo IFARBO LTDA">
+            </picture>
+        </section>
+    </footer>
+
+    <script src="../main.js"></script>
 </body>
 
 </html>

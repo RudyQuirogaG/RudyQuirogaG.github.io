@@ -24,7 +24,7 @@ const texts = document.querySelectorAll('.carousel__content h3');
 const controls = document.querySelectorAll('.carousel__control li')
 const right = document.querySelector('.carousel__arrow--right');
 const left = document.querySelector('.carousel__arrow--left');
-const time = 8000;
+const time = 5000;
 
 index = 0;
 
@@ -37,7 +37,7 @@ setInterval(() => {
         images[index].classList.add('carousel__img--active');
         texts[index].classList.add('carousel__content--active');
         controls[index].classList.add('carousel__control--active');
-    } else if (index === 1) {
+    } else if (index < (images.length - 1)) {
         images[index].classList.remove('carousel__img--active');
         texts[index].classList.remove('carousel__content--active');
         controls[index].classList.remove('carousel__control--active');
@@ -119,3 +119,42 @@ function callback(entries, observer) {
 
 const observer = new IntersectionObserver(callback, options);
 observer.observe(bpa, bpm, bpf, pbv);
+
+// Slider Products
+
+
+const mql = window.matchMedia('(max-width: 767px)');
+const imagesProducts = document.querySelectorAll('.products__img img');
+const rightProducts = document.querySelector('.products__arrow--right');
+const leftProducts = document.querySelector('.products__arrow--left');
+const timeProducts = 5000;
+
+indexProducts = 0;
+
+setInterval(() => {
+    if (indexProducts === 0) {
+        imagesProducts[indexProducts].classList.remove('products__img--active');
+        indexProducts++;
+        imagesProducts[indexProducts].classList.add('products__img--active');
+    } else if (indexProducts < (imagesProducts.length - 1)) {
+        imagesProducts[indexProducts].classList.remove('products__img--active');
+        indexProducts++;
+        imagesProducts[indexProducts].classList.add('products__img--active');
+    } else {
+        imagesProducts[indexProducts].classList.remove('products__img--active');
+        indexProducts = 0;
+        imagesProducts[indexProducts].classList.add('products__img--active');
+    }
+}, timeProducts)
+
+rightProducts.addEventListener('click', () => {
+    indexProducts = (indexProducts < imagesProducts.length - 1) ? indexProducts + 1 : imagesProducts.length - 1;
+    document.querySelector('.products__img--active').classList.remove('products__img--active');
+    imagesProducts[indexProducts].classList.add('products__img--active');
+});
+
+leftProducts.addEventListener('click', () => {
+    indexProducts = (indexProducts > 0) ? indexProducts - 1 : 0;
+    document.querySelector('.products__img--active').classList.remove('products__img--active');
+    imagesProducts[indexProducts].classList.add('products__img--active');
+});

@@ -5,11 +5,173 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contacto</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/tablet.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="../css/desktop.css" media="(min-width: 1024px)">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>IFARBO LTDA | Contacto</title>
+    <script src="https://kit.fontawesome.com/fea616fcd1.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <h1>contacto</h1>
+<body class="grid-container">
+    <header class="header">
+        <nav class="header__nav">
+            <picture>
+                <source srcset="../assets/img/ifarbo-logo-small.png" media="(max-width: 320px)">
+                <img class="header__img" src="../assets/img/ifarbo-logo-desktop.png" alt="logo">
+            </picture>
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="../pages/products.html">Productos</a></li>
+                <li class="header__item"><a class="header__link" href="../pages/news.html">Actualidad</a></li>
+                <li class="header__item"><a class="header__link" href="../pages/contact.html">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="contact-hero">
+            <div class="contact__picture">
+                <picture>
+                    <source srcset="../assets/img/contacto-ifarbo-small.png" media="(max-width: 320px)">
+                    <source srcset="../assets/img/contacto-ifarbo-tablet.png" media="(max-width: 768px)">
+                    <img src="../assets/img/contacto-ifarbo.png" alt="Productos IFARBO">
+                </picture>
+            </div>
+            <h2>Contacto</h2>
+        </section>
+
+        <section class="contact-info">
+            <div class="contact-info__container">
+                <img src="../assets/img/contact-cba.svg" alt="El cristo de la concordia">
+                <div>
+                    <h3>COCHABAMBA:</h3>
+                    <p><span class="contact-info__icons"><i class="fas fa-map-marker-alt"></i></span> Calle Caritas
+                        N°382
+                        Zona Santa Rosa Colcapirhua <a class="contact-info__btn--map"
+                            href="https://goo.gl/maps/EBRjKETe9wWwm73E6">VER MAPA</a></p>
+                    <p><span class="contact-info__icons"><i class="fas fa-phone-square-alt"></i></span> Administración
+                        (591-4) 4226001 - 4116063 <a class="contact-info__btn--tel" href="tel:591-4-4226001">LLAMAR</a>
+                    </p>
+                    <p><span class="contact-info__icons"><i class="fas fa-phone-square-alt"></i></span> Comercial
+                        (591-4)
+                        4025798 <a class="contact-info__btn--tel" href="tel:591-4-4025798">LLAMAR</a></p>
+                    <p><span class="contact-info__icons"><i class="fas fa-mobile-alt"></i></span> +591 69020577 <a
+                            class="contact-info__btn--tel"
+                            href="https://api.whatsapp.com/send?phone=+59169020577">WHATSAPP</a></p>
+                </div>
+            </div>
+
+            <div class="contact-info__container">
+                <img src="../assets/img/contact-lpz.svg" alt="El teleferico la paz">
+                <div>
+                    <h3>LA PAZ:</h3>
+                    <p><span class="contact-info__icons"><i class="fas fa-map-marker-alt"></i></span> Calle Batallón
+                        Victoria N°300 <a class="contact-info__btn--map"
+                            href="https://goo.gl/maps/WDVdUNheJfGzX1y68">VER
+                            MAPA</a></p>
+                    <p><span class="contact-info__icons"><i class="fas fa-phone-square-alt"></i></span> 2280913 <a
+                            class="contact-info__btn--tel" href="tel:591-2-2280913">LLAMAR</a></p>
+                    <p><span class="contact-info__icons"><i class="fas fa-mobile-alt"></i></span> +591-69416346 <a
+                            class="contact-info__btn--tel"
+                            href="https://api.whatsapp.com/send?phone=+59169416346">WHATSAPP</a></p>
+                </div>
+            </div>
+
+            <div class="contact-info__container">
+                <img src="../assets/img/contact-scz.svg" alt="El cristo redentor">
+                <div>
+                    <h3>SANTA CRUZ:</h3>
+                    <p><span class="contact-info__icons"><i class="fas fa-map-marker-alt"></i></span> Avenida Landivar
+                        N°371
+                        <a class="contact-info__btn--map" href="https://goo.gl/maps/L2bxCaLyVho4o4z98">VER
+                            MAPA</a>
+                    </p>
+                    <p><span class="contact-info__icons"><i class="fas fa-phone-square-alt"></i></span> 3525783 <a
+                            class="contact-info__btn--tel" href="tel:591-3-3525783">LLAMAR</a></p>
+                    <p><span class="contact-info__icons"><i class="fas fa-mobile-alt"></i></span> +591-69416349 <a
+                            class="contact-info__btn--tel"
+                            href="https://api.whatsapp.com/send?phone=+59169416349">WHATSAPP</a></p>
+                </div>
+            </div>
+
+            <div class="contact-info__container">
+                <img src="../assets/img/contact-tja.svg" alt="Uvas tarijeñas">
+                <div>
+                    <h3>TARIJA:</h3>
+                    <p><span class="contact-info__icons"><i class="fas fa-map-marker-alt"></i></span> Av.4 de Octubre
+                        N°1357
+                        <a class="contact-info__btn--map" href="https://goo.gl/maps/ghgNRTQ4QmtgxC86A">VER
+                            MAPA</a>
+                    </p>
+                    <p><span class="contact-info__icons"><i class="fas fa-phone-square-alt"></i></span> 6640645 <a
+                            class="contact-info__btn--tel" href="tel:591-4-6640645">LLAMAR</a></p>
+                    <p><span class="contact-info__icons"><i class="fas fa-mobile-alt"></i></span> +591 70224833 <a
+                            class="contact-info__btn--tel"
+                            href="https://api.whatsapp.com/send?phone=+59170224833">WHATSAPP</a></p>
+                </div>
+            </div>
+
+            <div class="contact-info__container">
+                <img src="../assets/img/contact-bni.svg" alt="Vista general del Beni">
+                <div>
+                    <h3>BENI:</h3>
+                    <p><span class="contact-info__icons"><i class="fas fa-map-marker-alt"></i></span> Calle Cristiano
+                        Valverde N°35 casi esq. Ganadera <a class="contact-info__btn--map"
+                            href="https://goo.gl/maps/zncuErkkQkW1gigQ8">VER
+                            MAPA</a></p>
+                    <p><span class="contact-info__icons"><i class="fas fa-phone-square-alt"></i></span> 3 4623556 <a
+                            class="contact-info__btn--tel" href="tel:591-3-4623556">LLAMAR</a></p>
+                    <p><span class="contact-info__icons"><i class="fas fa-mobile-alt"></i></span> +591 70273285 <a
+                            class="contact-info__btn--tel"
+                            href="https://api.whatsapp.com/send?phone=+59170273285">WHATSAPP</a></p>
+                </div>
+            </div>
+
+            <div class="contact-info__container">
+                <img src="../assets/img/contact-bol.svg" alt="Mapa de Bolivia">
+                <div>
+                    <h3>BOLIVIA (Atencion al cliente):</h3>
+                    <p><span class="contact-info__icons"><i class="fab fa-facebook-messenger"></i></span>
+                        m.me/ifarboltda.central <a class="contact-info__btn--tel"
+                            href="http://m.me/ifarboltda.central ">MENSAJE</a>
+                    </p>
+                    <p><span class="contact-info__icons"><i class="fas fa-mobile-alt"></i></span> +591 70273285 <a
+                            class="contact-info__btn--tel"
+                            href="https://api.whatsapp.com/send?phone=+59170273285">WHATSAPP</a></p>
+                    <p><span class="contact-info__icons"><i class="fas fa-envelope"></i></span> ifarbo@ifarbo.com <a
+                            class="contact-info__btn--tel" href="mailto:ifarbo@ifarbo.com">MENSAJE</a></p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__left">
+            <ul>
+                <li><a href="https://www.facebook.com/ifarboltda.central"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/ifarbo.bol/"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </section>
+        <section class="footer__center">
+            <ul>
+                <li><a href="../pages/products.html">Productos</a></li>
+                <li><a href="../pages/contact.html">Contacto</a></li>
+            </ul>
+        </section>
+        <section class="right">
+            <picture>
+                <img src="../assets/img/fotter-logo-small.png" alt="Logo IFARBO LTDA">
+            </picture>
+        </section>
+    </footer>
+
+    <script src="../main.js"></script>
 </body>
 
 </html>
