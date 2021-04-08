@@ -671,6 +671,7 @@ a {
 
 .blog__open .blog__content--content {
   width: 100%;
+  padding: 1rem;
   display: block;
   -webkit-transform: scaleY(1);
   -o-transform: scaleY(1);
@@ -691,12 +692,14 @@ a {
   background-color: var(--blue);
   color: var(--orange);
   cursor: pointer;
+  padding: 1rem;
 }
 
 .blog__content--alcohol {
   background-color: var(--green);
   color: var(--white);
   cursor: pointer;
+  padding: 1rem;
 }
 
 .blog__open .blog__content--clases,
