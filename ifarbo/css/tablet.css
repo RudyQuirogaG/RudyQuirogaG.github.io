@@ -281,11 +281,13 @@ p {
   width: 100%;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 50px repeat(2, auto) 50px;
+  gap: 0;
 }
 
 .blog-card__clases {
   grid-column: 3 / 11;
   grid-row: 2 / 3;
+  padding-bottom: 2rem;
 }
 
 .blog-card__alcohol {
