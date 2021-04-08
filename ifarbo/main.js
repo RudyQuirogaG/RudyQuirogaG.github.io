@@ -158,3 +158,5 @@ leftProducts.addEventListener('click', () => {
     document.querySelector('.products__img--active').classList.remove('products__img--active');
     imagesProducts[indexProducts].classList.add('products__img--active');
 });
+
+

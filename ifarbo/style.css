@@ -31,6 +31,10 @@ h2 {
   font-size: 1.2rem;
 }
 
+h4 {
+  font-size: 1rem;
+}
+
 p {
   font-size: 0.8rem;
 }
@@ -620,7 +624,6 @@ a {
   width: 100%;
   height: auto;
   object-fit: cover;
-  padding-bottom: 1rem;
 }
 
 .blog__title {
@@ -655,6 +658,51 @@ a {
 
 .blog__line {
   display: none;
+}
+
+.blog__close .blog__content--content {
+  height: 0px;
+  transition: height 1s ease-out;
+  -webkit-transform: scaleY(0);
+  -o-transform: scaleY(0);
+  -ms-transform: scaleY(0);
+  transform: scaleY(0);
+}
+
+.blog__open .blog__content--content {
+  width: 100%;
+  display: block;
+  -webkit-transform: scaleY(1);
+  -o-transform: scaleY(1);
+  -ms-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transform-origin: top;
+  -o-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+
+  -webkit-transition: -webkit-transform 0.4s ease-out;
+  -o-transition: -o-transform 0.4s ease;
+  -ms-transition: -ms-transform 0.4s ease;
+  transition: transform 0.4s ease;
+}
+
+.blog__content--clases {
+  background-color: var(--blue);
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.blog__content--alcohol {
+  background-color: var(--green);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.blog__open .blog__content--clases,
+.blog__open .blog__content--alcohol {
+  background-color: #bdc3c7;
+  color: #7f8c8d;
 }
 
 /* Contact Page Section Hero*/
