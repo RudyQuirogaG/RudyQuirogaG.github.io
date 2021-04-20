@@ -105,6 +105,10 @@ a {
   margin: 1.5rem 0;
 }
 
+.header__link.header__inicio {
+  color: var(--green);
+}
+
 .header__link {
   color: var(--black);
 }
@@ -558,7 +562,9 @@ a {
   gap: 1rem;
 }
 
-/* Products Hero */
+/* Products Page */
+
+/* Products Hero Section */
 
 .products-hero {
   max-width: 1100px;
@@ -586,6 +592,102 @@ a {
   color: var(--white);
   text-align: center;
   padding: 1.5rem;
+}
+
+/* Products list section */
+
+.products-list {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.accordion__item {
+  margin-bottom: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.accordion__item:first-of-type {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.accordion__item:last-of-type {
+  margin-bottom: 0;
+  border-bottom-right-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.accordion__title {
+  width: 100%;
+  padding: 1rem 1.25rem;
+  color: #212529;
+  background-color: var(--white);
+  border: 0;
+  border-radius: 0;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion__title::after {
+  width: 1rem;
+  height: 1rem;
+  content: '';
+  display: block;
+  background-image: url(./assets/img/product-down-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 1rem;
+  transition: transform 300ms ease-in-out;
+}
+
+.accordion__item:first-of-type .accordion__title {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+}
+
+.accordion__item:last-of-type .accordion__title {
+  border-bottom-right-radius: calc(0.25rem - 1px);
+  border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+.accordion__title:focus,
+.accordion__title:focus-visible {
+  border: none;
+  outline: 3px solid rgba(13, 110, 253, 0.25);
+}
+
+.accordion__title.open {
+  font-weight: 700;
+  color: #0c63e4;
+  background-color: #e7f1ff;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+}
+
+.accordion__title.open::after {
+  transform: rotate(180deg);
+}
+
+.accordion__content {
+  padding: 1rem 1.25rem;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.accordion__collapse.collapse {
+  display: none;
+}
+
+.accordion__collapse.collapsing {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease;
+}
+
+.accordion__collapse.open {
+  display: block;
 }
 
 /* News Page */

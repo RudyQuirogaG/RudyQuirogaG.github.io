@@ -17,6 +17,49 @@ function closeMenu() {
     headerNav.classList.remove('active');
 }
 
+
+// Accordion products
+
+document.querySelectorAll('.accordion__title').forEach((item) => {
+    item.addEventListener('click', (event) => {
+
+        let accCollapse = item.nextElementSibling;
+
+        // Open accordion item
+        if (!item.classList.contains('open')) {
+
+            accCollapse.style.display = 'block';
+            let accHeight = accCollapse.clientHeight;
+
+            setTimeout(() => {
+                accCollapse.style.height = `${accHeight}px`;
+                accCollapse.style.display = '';
+            }, 100)
+
+            accCollapse.classList = 'accordion__collapse collapsing'
+
+            setTimeout(() => {
+                accCollapse.classList = 'accordion__collapse open';
+                accCollapse.style.display = '';
+            }, 300);
+        } else {
+            // Close accordion item
+            accCollapse.classList = 'accordion__collapse collapsing';
+
+            setTimeout(() => {
+                accCollapse.style.height = '0px';
+            }, 100);
+
+            setTimeout(() => {
+                accCollapse.classList = 'accordion__collapse collapse'
+                accCollapse.style.height = '';
+            }, 300);
+        }
+
+        item.classList.toggle('open');
+    });
+});
+
 // Slider Products
 
 
