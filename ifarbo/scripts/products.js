@@ -25,25 +25,8 @@ document.querySelectorAll('.accordion__title').forEach((item) => {
 
         let accCollapse = item.nextElementSibling;
 
-        // Open accordion item
-        if (!item.classList.contains('open')) {
+        if (item.classList.contains('open')) {
 
-            accCollapse.style.display = 'block';
-            let accHeight = accCollapse.clientHeight;
-
-            setTimeout(() => {
-                accCollapse.style.height = `${accHeight}px`;
-                accCollapse.style.display = '';
-            }, 100)
-
-            accCollapse.classList = 'accordion__collapse collapsing'
-
-            setTimeout(() => {
-                accCollapse.classList = 'accordion__collapse open';
-                accCollapse.style.display = '';
-            }, 300);
-        } else {
-            // Close accordion item
             accCollapse.classList = 'accordion__collapse collapsing';
 
             setTimeout(() => {
@@ -51,8 +34,83 @@ document.querySelectorAll('.accordion__title').forEach((item) => {
             }, 100);
 
             setTimeout(() => {
-                accCollapse.classList = 'accordion__collapse collapse'
+                accCollapse.classList = 'accordion__collapse collapse';
                 accCollapse.style.height = '';
+            }, 300)
+
+        } else {
+
+            document.querySelectorAll('.accordion__title.open').forEach((item) => {
+                item.nextElementSibling.classList = 'accordion__collapse collapsing';
+
+                setTimeout(() => {
+                    item.nextElementSibling.style.height = '0px';
+                }, 100);
+
+                setTimeout(() => {
+                    item.nextElementSibling.classList = 'accordion__collapse collapse';
+                    item.nextElementSibling.style.height = '';
+                }, 300);
+
+                item.classList.toggle('open');
+            });
+
+            accCollapse.style.display = 'block';
+            let accHeight = accCollapse.clientHeight;
+
+            setTimeout(() => {
+                accCollapse.style.height = `${accHeight}px`;
+                accCollapse.style.display = '';
+            }, 100);
+
+            accCollapse.classList = 'accordion__collapse collapsing';
+
+            setTimeout(() => {
+                accCollapse.classList = 'accordion__collapse open';
+                accCollapse.style.display = '';
+            }, 300);
+
+        }
+
+        item.classList.toggle('open');
+    });
+});
+
+document.querySelectorAll('.accordion__title--inside').forEach((item) => {
+    item.addEventListener('click', (event) => {
+
+        let accOpenHeight = document.querySelector('.accordion__collapse.open').clientHeight;
+
+
+        if (item.classList.contains('open')) {
+            let accCloseHeight = document.querySelector('.accordion__collapse--inside.open').clientHeight;
+
+            item.nextElementSibling.classList = 'accordion__collapse--inside collapsing';
+
+            setTimeout(() => {
+                document.querySelector('.accordion__collapse.open').style.height = `${accOpenHeight - accCloseHeight}px`;
+                item.nextElementSibling.style.height = '0px';
+            }, 100);
+
+            setTimeout(() => {
+                item.nextElementSibling.classList = 'accordion__collapse--inside collapse';
+                item.nextElementSibling.style.height = '';
+            }, 300)
+        } else {
+            item.nextElementSibling.style.display = 'block';
+            let accHeight = item.nextElementSibling.clientHeight;
+
+            setTimeout(() => {
+                document.querySelector('.accordion__collapse.open').style.height = `${accHeight + accOpenHeight}px`;
+                item.nextElementSibling.style.height = `${accHeight}px`;
+                item.nextElementSibling.style.display = '';
+            }, 100);
+
+            item.nextElementSibling.classList = 'accordion__collapse--inside collapsing';
+
+            setTimeout(() => {
+                item.nextElementSibling.classList = 'accordion__collapse--inside open';
+                item.nextElementSibling.style.display = '';
             }, 300);
         }
 
