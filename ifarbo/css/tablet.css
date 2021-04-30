@@ -368,5 +368,6 @@ p {
 }
 
 .contact-info {
+  width: 90%;
   flex-direction: row;
 }
