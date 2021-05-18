@@ -363,6 +363,7 @@ p {
 }
 
 .contact-hero h2 {
+  align-self: center;
   grid-column: 2 / 6;
   grid-row: 3 / 5;
 }
