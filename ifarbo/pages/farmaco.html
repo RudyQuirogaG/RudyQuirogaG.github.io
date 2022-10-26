@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es-419">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../css/tablet.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="../css/desktop.css" media="(min-width: 1024px)">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>IFARBO LTDA | Farmacovigilancia</title>
+    <script src="https://kit.fontawesome.com/fea616fcd1.js" crossorigin="anonymous"></script>
+</head>
+<body class="grid-container">
+    <header class="header">
+        <nav class="header__nav">
+            <picture>
+                <source srcset="../assets/img/ifarbo-logo-small.png" media="(max-width: 320px)">
+                <a href="../index.html"><img class="header__img" src="../assets/img/ifarbo-logo-desktop.png"
+                        alt="logo"></a>
+            </picture>
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="../index.html">Inicio</a></li>
+                <li class="header__item"><a class="header__link header__farmaco" href="../pages/farmaco.html">Farmacovigilancia</a></li>
+                <li class="header__item"><a class="header__link" href="../pages/products.html">Productos</a></li>
+                <li class="header__item"><a class="header__link " href="../pages/news.html">Actualidad</a></li>
+                <li class="header__item"><a class="header__link" href="../pages/contact.html">Contacto</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="farmaco-hero">
+            <div class="farmaco__picture">
+                <picture>
+                    <source srcset="../assets/img/farmaco-ifarbo-small.png" media="(max-width: 425px)">
+                    <source srcset="../assets/img/farmaco-ifarbo-tablet.png" media="(max-width: 768px)">
+                    <img src="../assets/img/farmaco-ifarbo.png" alt="Farmacovigilancia">
+                </picture>
+            </div>
+            <h2>Farmacovigilancia</h2>
+        </section> 
+
+        <section class="farmaco">
+            <img class="farmaco__line farmaco__line--left"src="../assets/img/farmaco-left.svg" alt="Linea amarrilla">
+            <img class="farmaco__line farmaco__line--right"src="../assets/img/farmaco-right.svg" alt="Liena amarilla">
+            <div class="farmaco__content">
+                <h2 class="farmaco__title">CENTRO DE FARMACOVIGILANCIA</h2>
+                <p>Como parte del Sistema Nacional de Farmacovigilancia, en IFARBO tenemos la misión de velar por la seguridad de nuestros medicamentos, es por ello que ponemos  a su disposición este espacio destinado a recolectar notificaciones de reacciones adversas.</p>
+                <p>La Farmacovigilancia es una actividad de Salud Pública relacionada con la detección, evaluación y prevención de las reacciones adversas a medicamentos una vez que son comercializados.</p>
+                <p>Una REACCIÓN ADVERSA es una respuesta negativa y no intencionada que se presenta posterior a la administracion de un medicamento, a dosis normalmente usadas y prescritas por el médico.</p>
+                <h4>¿Por qué debemos hacer Farmacovigilancia?</h4>
+                    <ul>
+                        <li>Para mejorar la atención al paciente y su seguridad en relación con el uso de medicamentos.</li>
+                        <li>Poder descubrir reacciones adversas graves e inesperadas de medicamentos.</li>
+                        <li>Identificar factores predisponentes para las reacciones adversas a medicamentos.</li>
+                    </ul>
+                    <h4>¿Cómo hacer Farmacovigilancia?</h4>
+                    <p>A través de la NOTIFICACIÓN ESPONTÁNEA, realizando un reporte voluntario acerca de una reacción adversa que se sospecha pudo haber sido ocasionada por un medicamento. Lo puede realizar cualquier persona.</p>
+                    <p>Todos podemos colaborar a mejorar la seguridad de los medicamentos.</p>
+                <picture>
+                    <img src="../assets/img/farmaco.png" alt="Doctor con una carpeta">
+                </picture>
+            </div>
+        </section>
+
+        <section class="farmaco__form">
+            <p id="farmaco">Si usted sospecha de alguna reacción adversa durante el uso de uno de nuestros medicamentos puede llenar el Formulario ó contactarse con nosotros:</p>
+            <h2>FORMULARIO</h2>
+            <h4>Recepción de reacciones adversas a medicamentos y problemas relacionados</h4>  
+            <div>
+                <form class="farmaco__formulario" action="https://formsubmit.co/farmacovigilancia@ifarbo.com" method="post">
+                    <div class="form__medicamento--1">
+                        <p><strong> 1. IDENTIFICACIÓN DEL MEDICAMENTO</strong></p>
+                        <label for="nombre comercial">Nombre comercial:</label>
+                        <input type="text" id="nombre comercial" name="nombre comercial" required>
+                        <label for="forma farmaceutica">Forma farmacéutica:</label>
+                        <select name="forma farmaceutica" id="forma farmaceutica" required>
+                            <option value="">--Por favor elija una opcion--</option>
+                            <option value="capsula">Cápsula</option>
+                            <option value="comprimido">Comprimido</option>
+                            <option value="crema">Crema</option>
+                            <option value="gel">Gel</option>
+                            <option value="gotas">Gotas</option>
+                            <option value="jarabe">Jarabe</option>
+                            <option value="polvo">Polvo</option>
+                            <option value="solucion">Solucion</option>
+                            <option value="suspension">Suspension</option>
+                            <option value="unguento">Unguento</option>
+                        </select>
+                        <label for="lote">Lote (Si conoce):</label>
+                        <input type="text" id="lote" name="lote">
+                    </div>
+                    <div class="form__medicamento--2">
+                        <p><strong>2. IDENTIFICACIÓN DEL PACIENTE</strong></p>
+                        <label for="nombre paciente">Nombre:</label>
+                        <input type="text" id="nombre paciente" name="nombre paciente" required>
+                        <label for="apellido paciente">Apellido:</label>
+                        <input type="text" id="apellido" name="apelllido paciente" required>
+                        <label for="genero paciente">Género:</label>
+                        <select name="genero paciente" id="genero paciente">
+                            <option value="">--Por favor elija una opcion--</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+                        <label for="edad paciente">Edad:</label>
+                        <input type="number" id="edad paciente" name="edad paciente" min="1" max="100" required>
+                        <label for="ciudad paciente">Departamento:</label>
+                        <select name="ciudad paciente" id="ciudad paciente" required>
+                            <option value="">--Por favor elija una opcion--</option>
+                            <option value="beni">Beni</option>
+                            <option value="cochabamba">Cochabamba</option>
+                            <option value="la paz">La Paz</option>
+                            <option value="oruro">Oruro</option>
+                            <option value="pando">Pando</option>
+                            <option value="potosi">Potosi</option>
+                            <option value="santa cruz">Santa Cruz</option>
+                            <option value="sucre">Sucre</option>
+                            <option value="tarija">Tarija</option>
+                        </select>
+                        <label for="primera vez">Primera vez que usa el medicamento :</label>
+                        <div class="farmaco__formulario--select">
+                            <input type="checkbox" id="primera vez si" name="primera vez si" value="Si">
+                            <label for="primera vez si">Si</label>
+                            <input type="checkbox" id="primera vez no" name="primera vez no" value="No">
+                            <label for="primera vez no">No</label>
+                        </div>
+                        <label for="recetado medico">Recetado por médico:</label>
+                        <div class="farmaco__formulario--select">
+                            <input type="checkbox" id="recetado medico si" name="recetado medico si" value="Si">
+                            <label for="recetado medico si">Si</label>
+                            <input type="checkbox" id="recetado medico no" name="recetado medico no" value="No">
+                            <label for="recetado medico no">No</label>
+                        </div>
+                        <label for="dosis">Dosis ingerida:</label>
+                        <input type="text" id="dosis" name="dosis" required>
+                    </div>
+                    <div class="form__medicamento--3">
+                        <p><strong>3. IDENTIFICACIÓN DEL NOTIFICADOR</strong></p>
+                        <label for="notificador nombre">Nombre:</label>
+                        <input type="text" id="notificador nombre" name="notificador nombre" required>
+                        <label for="profesion">Profesión: (opcional)</label>
+                        <input type="text" id="profesion" name="profesion">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                        <label for="direccion">Dirección: (opcional)</label>
+                        <input type="text" id="direccion" name="direccion">
+                        <label for="institucion">Institución: (opcional)</label>
+                        <input type="text" id="institucion" name="institucion">
+                    </div>
+                    <div class="form__medicamento--4">
+                        <p><strong>4. DESCRIPCIÓN DE LA REACCION ADVERSA</strong></p>
+                        <label for="descripcion">Describa las molestias que se le presentaron: </label>
+                        <textarea name="descripcion" id="descripcion" cols="30" rows="5" required></textarea>
+                        <!-- <input type="text" id="descripcion" name="descripcion" required> -->
+                        <label for="reaccion">La reacción se presentó:</label>
+                        <div>
+                            <input type="checkbox" id="reaccion durante el uso" name="reaccion durante el uso" value="Si">
+                            <label for="reaccion durante el uso">Durante el uso del medicamento</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="reaccion despues del uso"name="reaccion despues del uso" value="Si">
+                            <label for="reaccion despues del uso">Después del uso del medicamento</label>
+                        </div>
+                        <label for="usando">¿Está usando otros medicamentos simultáneamente?</label>
+                        <div class="farmaco__formulario--select">
+                            <input type="checkbox" id="usando otro medicamento si" name="usando otro medicamento si" value="Si">
+                            <label for="usando otro medicamento si">Si</label>
+                            <input type="checkbox" id="usando otro medicamento no" name="usando otro medicamento no" value="No">
+                            <label for="usando otro medicamento no">No</label>
+                        </div>
+                        <label for="llamar">¿Acepta usted que le llamemos para obtener mayor información?</label>
+                        <div class="farmaco__formulario--select">
+                            <input type="checkbox" id="llamar si" name="llamar si" value="Si">
+                            <label for="llamar si">Si</label>
+                            <input type="checkbox" id="llamar no" name="llamar no" value="No">
+                            <label for="llamar no">No</label>
+                        </div>
+                    </div>
+                    <button class="form__medicamento--5">Enviar</button>
+                </form>
+            </div>
+            <div class="farmaco__contact">
+                <h4>CONTACTOS</h4>
+                <p>Solicite contactarse con la persona responsable de Farmacovigilancia</p>
+                <p>Telf.: 4226001 - 4116063</p>
+                <p><span class="farmaco__correo">Correo electrónico:</span>  farmacovigilancia@ifarbo.com</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__left">
+            <ul>
+                <li><a href="https://www.facebook.com/ifarboltda.central"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/ifarbo.bol/"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+        </section>
+        <section class="footer__center">
+            <ul>
+                <li><a href="../pages/products.html">Productos</a></li>
+                <li><a href="../pages/contact.html">Contacto</a></li>
+            </ul>
+        </section>
+        <section class="right">
+            <picture>
+                <img src="../assets/img/fotter-logo-small.png" alt="Logo IFARBO LTDA">
+            </picture>
+        </section>
+    </footer>
+    <script src="../scripts/farmaco.js"></script>
+</body>
+</html>
