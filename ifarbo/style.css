@@ -107,6 +107,7 @@ a {
 }
 
 .header__link.header__inicio,
+.header__link.header__farmaco,
 .header__link.header__products,
 .header__link.header__actualidad,
 .header__link.header__contact {
@@ -1012,4 +1013,147 @@ a {
 
 .footer__right {
   align-self: center;
+}
+
+/* Farmacovigilancia Page Section Info */
+
+.farmaco-hero {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 1fr auto / 1fr;
+  justify-content: center;
+  align-content: center;
+}
+
+.farmaco__picture {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.farmaco-hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.farmaco-hero h2 {
+  background-color: var(--gray-trn);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.farmaco {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 0;
+  display: grid;
+  grid-template: 2fr / 1fr;
+  gap: 0.5rem;
+}
+
+.farmaco__line {
+  display: none;
+}
+
+.farmaco__title {
+  color: var(--green);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.farmaco__content h4 {
+  color: var(--green);
+  text-align: center;
+  padding: 0.5rem 0;
+} 
+
+.farmaco__content p {
+  padding: 0.5rem 0;
+  text-align: justify;
+  line-height: 150%;
+}
+
+.farmaco__content ul li {
+  padding: 0.5rem 0;
+  font-size: 0.8rem;
+  line-height: 150%;
+  list-style: inside;
+}
+
+.farmaco__content img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  padding: 1.5rem 0;
+}
+
+.farmaco__form {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 0 1rem 0;
+  display: grid;
+  grid-template: 2fr / 1fr;
+  gap: 1rem;
+}
+
+#farmaco + h2,
+#farmaco + h2 + h4 {
+  color: var(--green);
+  text-align: center;
+}
+
+.farmaco__contact h4{
+  color: var(--green);
+  text-align: center;
+}
+
+.farmaco__form p {
+  color: var(--green);
+  padding: 0.5rem 0;
+}
+
+#farmaco {
+  color: var(--black);
+  text-align: justify;
+  line-height: 150%;
+  padding: 0 0 0.5rem 0;
+}
+
+.farmaco__formulario {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.farmaco__formulario--select {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.farmaco__contact p {
+  font-size: 1rem;
+  color: var(--black);
+}
+
+.farmaco__correo {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.form__medicamento--1,
+.form__medicamento--2,
+.form__medicamento--3,
+.form__medicamento--4 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#descripcion {
+  resize: none;
 }
